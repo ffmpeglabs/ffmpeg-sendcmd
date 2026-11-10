@@ -4,6 +4,6 @@ $MEDIA_1
 $MEDIA_2 
 -filter_complex 
 [1:v]sendcmd=f=commands.txt[ov];[0:v][ov]overlay
--c:a 
-copy 
+-c:a copy 
+-y
 $OUTPUT_PATH
