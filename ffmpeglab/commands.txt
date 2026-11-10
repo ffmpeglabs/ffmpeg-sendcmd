@@ -1,5 +1,6 @@
-1.0   overlay   x 100   y 100   opacity 0.0
-2.0   overlay   x 100   y 100   opacity 0.5
-3.0   overlay   x 100   y 100   opacity 1.0
-5.0   overlay   x 0     y 200
-10.0  overlay   x 500   y 200
+1.0 colorchannelmixer@fade aa 0.0;
+2.0 colorchannelmixer@fade aa 0.5;
+3.0 colorchannelmixer@fade aa 1.0;
+
+5.0 overlay@main x 0, overlay@main y 200;
+10.0 overlay@main x 500, overlay@main y 200;
