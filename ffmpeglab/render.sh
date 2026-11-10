@@ -1,0 +1,10 @@
+ffmpeg 
+-i 
+$MEDIA_1 
+-i 
+$MEDIA_2 
+-filter_complex 
+[1:v]sendcmd=f=commands.txt[ov];[0:v][ov]overlay
+-c:a 
+copy 
+$OUTPUT_PATH
