@@ -1,9 +1,8 @@
--i 
-$MEDIA_1 
--i 
-$MEDIA_2 
+-i $MEDIA_1
+-i $MEDIA_2
 -filter_complex 
-[1:v]sendcmd=f=ffmpeglab/commands.txt[ov];[0:v][ov]overlay
--c:a copy 
+[1:v]loop=loop=-1:size=1:start=0,sendcmd=f=commands.txt,format=rgba,colorchannelmixer@fade=aa=1[ov];[0:v][ov]overlay@main
+-c:a copy
+-shortest
 -y
 $OUTPUT_PATH
