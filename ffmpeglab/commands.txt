@@ -1,6 +1,6 @@
-# smooth fade in between 1s and 3s
-1.0-3.0 [expr] colorchannelmixer@fade aa 'lerp(0,1,TI)';
+# fade in between 1s and 3s, centered
+1.0-3.0 [expr] colorchannelmixer@fade aa 'TI';
 
-# move smoothly from x=0 to x=500 between 5s and 10s
-5.0-10.0 [expr] overlay@main x 'lerp(0,500,TI)';
-5.0-10.0 [expr] overlay@main y 'lerp(200,200,TI)';
+# move smoothly from center to right, between 5s and 10s
+5.0-10.0 [expr] overlay@main x '438+(837-438)*TI';
+5.0-10.0 [expr] overlay@main y '303';
