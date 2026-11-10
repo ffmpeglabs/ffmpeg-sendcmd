@@ -1,4 +1,3 @@
-ffmpeg 
 -i 
 $MEDIA_1 
 -i 
